@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>The select element</h1>
+
+    <p>The select element is used to create a drop-down list.</p>
+
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      Click the "Submit" button and the form-data will be sent to a page on the
+      server called "action_page.php".
+    </p>
+
+    <p hidden>This paragraph should be hidden.</p>
+    <p>This is a visible paragraph.</p>
+    <p>
+      <b>Note:</b> The hidden attribute is not supported in IE10 or earlier
+      versions.
+    </p>
+
+    <h1>A Hidden Field (look in source code)</h1>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <input type="hidden" id="custId" name="custId" value="3487" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      <strong>Note:</strong> The hidden field is not shown to the user, but the
+      data is sent when the form is submitted.
+    </p>
+  </body>
+</html>
